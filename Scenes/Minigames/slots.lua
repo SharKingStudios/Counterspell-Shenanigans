@@ -227,7 +227,7 @@ function slots.draw()
     -- 2) Draw the slot reels
     local SLOT_WIDTH, SLOT_HEIGHT = 100, 120
     local REEL_SPACING = 15
-    local startX = (love.graphics.getWidth() - (3 * SLOT_WIDTH + 2 * REEL_SPACING)) / 2
+    local startX = (screenWidth - (3 * SLOT_WIDTH + 2 * REEL_SPACING)) / 2
     local startY = 50
 
     for i = 1, 3 do
@@ -281,7 +281,7 @@ function slots.draw()
     end
 
     -- 4) Button prompt (or user instruction)
-    local buttonX = love.graphics.getWidth()/2 - 200
+    local buttonX = screenWidth/2 - 200
     local buttonY = 200
     love.graphics.setColor(198/255, 57/255, 57/255)
     love.graphics.rectangle("fill", buttonX, buttonY, 400, 50, 15, 15)
@@ -296,11 +296,11 @@ function slots.draw()
     if game.result ~= "" then
         love.graphics.setFont(game.largeFont)
         love.graphics.setColor(0.2, 0.2, 0.2, 0.8)
-        love.graphics.rectangle("fill", love.graphics.getWidth()/2 - 250, -10, 500, 50, 20, 20)
+        love.graphics.rectangle("fill", screenWidth/2 - 250, -10, 500, 50, 20, 20)
         love.graphics.setColor(1, 0.84, 0)
-        love.graphics.rectangle("line", love.graphics.getWidth()/2 - 250, -10, 500, 50, 20, 20)
+        love.graphics.rectangle("line", screenWidth/2 - 250, -10, 500, 50, 20, 20)
         love.graphics.setColor(1, 1, 1)
-        love.graphics.printf(game.result, 0, 0, love.graphics.getWidth(), "center")
+        love.graphics.printf(game.result, 0, 0, screenWidth, "center")
     end
 
     -- 6) Money/leaderboard
@@ -398,12 +398,12 @@ function slots.checkWin()
         winAmount = game.betAmount * 5
         game.result = "Jackpot! You win $"..winAmount.."!"
         superwinSound:play()
-        spawnMoneyExplosion(love.graphics.getWidth()/2, 100, 100)
+        spawnMoneyExplosion(screenWidth/2, 100, 100)
     elseif (s1 == s2) or (s2 == s3) or (s1 == s3) then
         winAmount = game.betAmount * 2
         game.result = "Matched two peeps! You win $"..winAmount.."!"
         winSound:play()
-        spawnMoneyExplosion(love.graphics.getWidth()/2, 100, 50)
+        spawnMoneyExplosion(screenWidth/2, 100, 50)
     else
         winAmount = 0
         game.result = "No match! Better luck next time."
