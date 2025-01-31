@@ -4,7 +4,7 @@
 local state = {}
 
 -- Load libraries
-local CScreen = require "Libraries/cscreen"
+local CScreen = require("Libraries/cscreen")
 
 -- Define the load function
 function love.load()
@@ -19,14 +19,14 @@ function love.load()
 
     -- love.window.setMode(2340/2, 1080/2) -- Set to custom w / h for debug
     -- print("THINGY")
-    love.window.setTitle("Creative Game Name")
+    love.window.setTitle("MMG - The Gambling Game")
     love.math.setRandomSeed(os.time())
 
     -- Load scaling
     -- CScreen.init(1920, 1080, true)
 
     -- Load the menu state
-    state.current = require("Scenes/Mainmenu")
+    state.current = require("Scenes/mainMenu")
     state.current.load()
 end
 

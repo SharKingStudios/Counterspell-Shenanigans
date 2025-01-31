@@ -426,10 +426,12 @@ function setParameter(playerName, param, value)
     if world[playerName] then
         world[playerName].params = world[playerName].params or {}
         world[playerName].params[param] = value
-        -- Send update to server
         local params = string.format("{%s=%d}", param, value)
         local dg = string.format("%s %s %s", playerName, "at", params)
-        udp:send(dg)
+        -- Instead of udp:send(dg), do:
+        if ws then
+            ws:send(dg)
+        end
         return true
     end
     return false
