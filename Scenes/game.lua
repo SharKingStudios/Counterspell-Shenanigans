@@ -254,7 +254,7 @@ function game.draw()
                 scaleY = 1 + (sclAmp*3) - scaleX
 
             end
-            if v.x > love.graphics.getWidth()/2 then scaleX = -scaleX end
+            if v.x > screenWidth/2 then scaleX = -scaleX end
 
             love.graphics.setColor(0.1, 0.1, 0.1)
             love.graphics.print(k, v.x - 25, v.y - 100)

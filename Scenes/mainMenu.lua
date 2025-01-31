@@ -20,7 +20,7 @@ function mainMenu.load()
 
     screenWidthA = love.graphics.getWidth()
     screenHeightA = love.graphics.getHeight()
-    screenWidth = 1920
+    screenWidthA= 1920
     screenHeight = 1080
 
     -- Initialize
@@ -73,16 +73,16 @@ function mainMenu.update(dt)
 
     -- Create suit GUI elements
     love.graphics.setFont(font)
-    suit.Label("Welcome to Multiplayer Minor Gambling (MMG)", (screenWidth / 2 - 750) * scaleStuff("w"), (25) * scaleStuff("h"), 1500, 200)
+    suit.Label("Welcome to Multiplayer Minor Gambling (MMG)", (screenWidthA/ 2 - 750) * scaleStuff("w"), (25) * scaleStuff("h"), 1500, 200)
     love.graphics.setFont(font2)
-    suit.Label("The Online Multiplayer Gambling Game For Minors", (screenWidth / 2 - 400) * scaleStuff("w"), (300) * scaleStuff("h"), 800, 100)
+    suit.Label("The Online Multiplayer Gambling Game For Minors", (screenWidthA/ 2 - 400) * scaleStuff("w"), (300) * scaleStuff("h"), 800, 100)
     
     love.graphics.setFont(font3)
-    suit.Label("Please enter your name to start:", (screenWidth / 2 - 400) * scaleStuff("w"), (screenHeight / 2 - 25) * scaleStuff("h"), 800, 100)
+    suit.Label("Please enter your name to start:", (screenWidthA/ 2 - 400) * scaleStuff("w"), (screenHeight / 2 - 25) * scaleStuff("h"), 800, 100)
     suit.Input(nameInput, screenWidthA / 2 - 200, 75 + screenHeightA/2, 400, 75)
 
     love.graphics.setFont(font)
-    if suit.Button("Start", ((screenWidth / 2) - 200) * scaleStuff("w"), (screenHeight - 275) * scaleStuff("h"),
+    if suit.Button("Start", ((screenWidthA/ 2) - 200) * scaleStuff("w"), (screenHeight - 275) * scaleStuff("h"),
         400 * scaleStuff("w"), 150 * scaleStuff("h")).hit then
         -- Strip spaces from nameInput.text
         nameInput.text = nameInput.text:gsub("%s+", "")
