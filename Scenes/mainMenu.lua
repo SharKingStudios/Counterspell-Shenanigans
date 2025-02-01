@@ -20,7 +20,7 @@ function mainMenu.load()
 
     screenWidthA = love.graphics.getWidth()
     screenHeightA = love.graphics.getHeight()
-    screenWidthA= 1920
+    screenWidth= 1920
     screenHeight = 1080
 
     -- Initialize

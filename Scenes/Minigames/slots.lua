@@ -429,9 +429,7 @@ function setParameter(playerName, param, value)
         local params = string.format("{%s=%d}", param, value)
         local dg = string.format("%s %s %s", playerName, "at", params)
         -- Instead of udp:send(dg), do:
-        if ws then
-            ws:send(dg)
-        end
+        udp:send(dg)
         return true
     end
     return false
