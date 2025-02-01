@@ -2,7 +2,7 @@
 ### The Online Multiplayer Gambling Game for Minors!  
 *(But actually for everyone. And not real gambling. And not real money. You get the idea.)*
 
-![Gambling Child](https://cloud-84ebmg7sq-hack-club-bot.vercel.app/0mmggamedemo.gif)
+![MMG Game Demo](https://cloud-fvx2rjp96-hack-club-bot.vercel.app/0mmggamedemo5fps.gif)
 
 ---
 
