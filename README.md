@@ -1,4 +1,4 @@
-# Multiplayer Minor Gambling (MMG)
+# Multiplayer Minor Gambling (MMG) - Made for Counterspell ATL!
 ### The Online Multiplayer Gambling Game for Minors!  
 *(But actually for everyone. And not real gambling. And not real money. You get the idea.)*
 
