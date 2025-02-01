@@ -2,6 +2,9 @@
 ### The Online Multiplayer Gambling Game for Minors!  
 *(But actually for everyone. And not real gambling. And not real money. You get the idea.)*
 
+## Watch the Trailer!
+[![MMG Trailer](https://img.youtube.com/vi/BhnL6WWWqAc/0.jpg)](https://www.youtube.com/watch?v=BhnL6WWWqAc)<br>
+**[Click above image or use this link.](https://www.youtube.com/watch?v=BhnL6WWWqAc)**<br>
 ![MMG Game Demo](https://cloud-fvx2rjp96-hack-club-bot.vercel.app/0mmggamedemo5fps.gif)
 
 ---
